@@ -1,0 +1,19 @@
+# EDK2 build outputs
+Build/
+*.fd
+*.fd.shimmed
+*.fd.shimmed.gz
+*.img
+
+# Device-specific stock images (64MB, not for the repo)
+vendor_boot-pearl-stock.img
+
+# edk2 / edk2-platforms are git submodules (see .gitmodules)
+Common/edk2/*
+Common/edk2-platforms/*
+
+# Editor / OS noise
+*.swp
+*~
+.DS_Store
+Thumbs.db

@@ -17,3 +17,6 @@ Common/edk2-platforms/*
 *~
 .DS_Store
 Thumbs.db
+
+# Stray file produced by the edk2 build tool (build log)
+/16

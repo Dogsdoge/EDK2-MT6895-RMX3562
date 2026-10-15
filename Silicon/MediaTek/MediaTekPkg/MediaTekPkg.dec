@@ -41,6 +41,8 @@
   # Set to 0 on platforms where the takeover is not needed.
   gMediaTekTokenSpaceGuid.PcdMipiFrameBufferOvl0Base|0|UINT32|0x0000a40b
   gMediaTekTokenSpaceGuid.PcdMipiFrameBufferOvl0_2LBase|0|UINT32|0x0000a40c
+  # UFS host controller MMIO base (0 disables the MediaTek UFS driver).
+  gMediaTekTokenSpaceGuid.PcdUfsHostControllerBase|0|UINT32|0x0000a40d
   gMediaTekTokenSpaceGuid.PcdWatchdogBaseAddress|0x10007000|UINT32|0x0000a407
   gMediaTekTokenSpaceGuid.PcdWatchdogWorkingTimer|1|UINT32|0x0000a408
   # RTC information

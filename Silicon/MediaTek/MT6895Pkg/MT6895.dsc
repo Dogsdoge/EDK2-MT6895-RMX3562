@@ -58,3 +58,5 @@
 
 [Components.common]
   MediaTekPkg/Drivers/MtkGpioDxe/MtkGpioDxe.inf
+  MediaTekPkg/Drivers/MtkUfsDxe/MtkUfsDxe.inf
+  MdeModulePkg/Bus/Ufs/UfsPassThruDxe/UfsPassThruDxe.inf

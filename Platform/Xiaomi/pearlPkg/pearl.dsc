@@ -36,6 +36,11 @@
   gMediaTekTokenSpaceGuid.PcdMipiFrameBufferOvl0Base|0x14002000
   gMediaTekTokenSpaceGuid.PcdMipiFrameBufferOvl0_2LBase|0x14003000
 
+  # UFS host controller (mainline mt6895.dtsi ufshci@112b0000). The LK
+  # already brings up the PHY/clocks/link, so UEFI only runs the standard
+  # UFSHCI init plus the MediaTek CLK_CG bit.
+  gMediaTekTokenSpaceGuid.PcdUfsHostControllerBase|0x112b0000
+
 [LibraryClasses]
   PlatformMemoryMapLib|pearlPkg/Library/PlatformMemoryMapLib/PlatformMemoryMapLib.inf
 

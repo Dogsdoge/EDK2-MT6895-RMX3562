@@ -41,8 +41,21 @@
   # UFSHCI init plus the MediaTek CLK_CG bit.
   gMediaTekTokenSpaceGuid.PcdUfsHostControllerBase|0x112b0000
 
+  # Keypad: KPD controller (kp@1c00e000) for volume down, SPMI PMIF
+  # (spmi@1c804000) for the MT6363 power/volume-up keys.
+  gMediaTekTokenSpaceGuid.PcdKeypadBase|0x1c00e000
+  gMediaTekTokenSpaceGuid.PcdPmifBase|0x1c804000
+
 [LibraryClasses]
   PlatformMemoryMapLib|pearlPkg/Library/PlatformMemoryMapLib/PlatformMemoryMapLib.inf
+  # Required by Features/Ext4Pkg/Ext4Dxe (lives in the edk2 RedfishPkg).
+  BaseUcs2Utf8Lib|RedfishPkg/Library/BaseUcs2Utf8Lib/BaseUcs2Utf8Lib.inf
+
+[Components]
+  # ACPI tables (MADT/GTDT/FADT/DSDT) for Windows and ACPI-aware OSes.
+  pearlPkg/AcpiTables/AcpiTables.inf
+  # ext4 read support (e.g. reading the Linux rootfs for WinPE payloads).
+  Features/Ext4Pkg/Ext4Dxe/Ext4Dxe.inf
 
 !include Silicon/MediaTek/MT6895Pkg/MT6895.dsc
 

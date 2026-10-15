@@ -151,6 +151,11 @@ READ_LOCK_STATUS   = TRUE
   INF MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
 
   #
+  # ext4 read support
+  #
+  INF Features/Ext4Pkg/Ext4Dxe/Ext4Dxe.inf
+
+  #
   # UFS storage (MediaTek UFSHCI + generic UFS pass-thru + SCSI stack)
   #
   INF MediaTekPkg/Drivers/MtkUfsDxe/MtkUfsDxe.inf
@@ -168,6 +173,7 @@ READ_LOCK_STATUS   = TRUE
   INF MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
   INF MdeModulePkg/Universal/Acpi/AcpiPlatformDxe/AcpiPlatformDxe.inf
   INF MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf
+  INF RuleOverride = ACPITABLE pearlPkg/AcpiTables/AcpiTables.inf
 
   #
   # FDT support

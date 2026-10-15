@@ -15,3 +15,11 @@
   ArmPkg/ArmPkg.dec
   MT6895Pkg/MT6895.dec
   MediaTekPkg/MediaTekPkg.dec
+
+[LibraryClasses]
+  IoLib
+  TimerLib
+
+[FixedPcd]
+  gMediaTekTokenSpaceGuid.PcdKeypadBase
+  gMediaTekTokenSpaceGuid.PcdPmifBase

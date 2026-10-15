@@ -43,6 +43,9 @@
   gMediaTekTokenSpaceGuid.PcdMipiFrameBufferOvl0_2LBase|0|UINT32|0x0000a40c
   # UFS host controller MMIO base (0 disables the MediaTek UFS driver).
   gMediaTekTokenSpaceGuid.PcdUfsHostControllerBase|0|UINT32|0x0000a40d
+  # Keypad (KPD) and SPMI PMIF bases for the keypad driver.
+  gMediaTekTokenSpaceGuid.PcdKeypadBase|0|UINT32|0x0000a40e
+  gMediaTekTokenSpaceGuid.PcdPmifBase|0|UINT32|0x0000a40f
   gMediaTekTokenSpaceGuid.PcdWatchdogBaseAddress|0x10007000|UINT32|0x0000a407
   gMediaTekTokenSpaceGuid.PcdWatchdogWorkingTimer|1|UINT32|0x0000a408
   # RTC information

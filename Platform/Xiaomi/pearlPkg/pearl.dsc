@@ -26,9 +26,9 @@
   # (1088px = 4352B row), VisibleWidth the real 1080px panel width.
   gMediaTekTokenSpaceGuid.PcdMipiFrameBufferWidth|1088
   gMediaTekTokenSpaceGuid.PcdMipiFrameBufferVisibleWidth|1080
-  gMediaTekTokenSpaceGuid.PcdMipiFrameBufferHeight|2460
+  gMediaTekTokenSpaceGuid.PcdMipiFrameBufferHeight|2412
   gMediaTekTokenSpaceGuid.PcdMipiFrameBufferLayers|3
-  gMediaTekTokenSpaceGuid.PcdMipiFrameBufferAddress|0xfe14f000
+  gMediaTekTokenSpaceGuid.PcdMipiFrameBufferAddress|0xfe1af000
   gMediaTekTokenSpaceGuid.PcdMipiFrameBufferPixelFormat|1   # RGB (a8r8g8b8 word order)
 
   # Display overlay (OVL) takeover: mt6895 disp_ovl0 @ 0x14002000,

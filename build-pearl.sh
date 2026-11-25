@@ -56,9 +56,9 @@ VENDOR_BOOT_OUT="Build/vendor_boot-pearl.img"
 # Stock pearl vendor_boot (slot A backup): supplies the stock DTB + vendor
 # ramdisk + non-zero ramdisk address for MTK LK compatibility.
 STOCK_VENDOR_BOOT="${STOCK_VENDOR_BOOT:-$ROOT_DIR/vendor_boot-pearl-stock.img}"
-# Stock pearl boot os_version (Android 12.0.0, patch level 2023-11) so the LK
-# anti-rollback check sees a matching image.
-PEARL_OS_VERSION="0x18000199"
+# os_version dumped from the live RMX3562 boot_a (v4 header @+16, active slot
+# _a). The LK anti-rollback check must see the same value as the stock image.
+PEARL_OS_VERSION="0x18000162"
 
 cat BootShim/BootShim.bin "$FD" > "${FD}.shimmed"
 gzip -9 -c "${FD}.shimmed" > "${FD}.shimmed.gz"

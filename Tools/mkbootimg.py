@@ -16,8 +16,8 @@ import sys
 PAGE = 4096
 BOOT_PART_SIZE = 64 * 1024 * 1024
 BOOT_MAGIC = b"ANDROID!"
-# Stock pearl boot image: Android 12.0.0, patch 2023-11.
-OS_VERSION_FIELD = 0x1800017B
+# os_version dumped from the live RMX3562 boot_a (v4 header @+16).
+OS_VERSION_FIELD = 0x18000162
 HEADER_SIZE = 1584
 HEADER_VERSION = 4
 
